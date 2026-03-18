@@ -10,4 +10,9 @@ export default defineNuxtConfig({
       exclude: ["/"],
     },
   },
+  routeRules: {
+    "/": { isr: 60 },
+    "/login": { isr: 3600 },
+    "/account": { isr: 60 },
+  },
 });
